@@ -1,0 +1,56 @@
+
+.m-token--onboarding--rewards-input {
+  margin-bottom: 16px;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  m-plus--subscription {
+    margin: 0 !important;
+    width: 100%;
+    max-width: none;
+  }
+
+  .m-btn {
+    margin-left: 16px;
+  }
+
+  .m-token-join--form--input-input {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  m-tooltip i {
+    font-size: 16px;
+  }
+}
+
+.m-token--onboarding--prompt {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+}
+
+.m-token-join--form--inprogress {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.m-token-join--form--error {
+  color: #f44336 !important;
+  font-weight: 600;
+  padding: 8px;
+  margin: 16px 0;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+.m-token--onboarding--slide {
+  .m-phone-input {
+    input {
+      max-width: 140px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<m-topbar class="m-noshadow mdl-color--white mdl-color-text--grey-600">
+  <ng-container search>
+    <m-search--bar></m-search--bar>
+  </ng-container>
+  <ng-container icons>
+    <m-notifications--topbar-toggle></m-notifications--topbar-toggle>
+    <m-wallet--topbar-toggle></m-wallet--topbar-toggle>
+  </ng-container>
+</m-topbar>
+
+<m-body class="mdl-color--grey-100">
+  <m-announcement [id]="'blockchain:sale'" *ngIf="false">
+    <span class="m-blockchain--wallet-address-notice--action"
+      routerLink="/tokens" 
+      i18n="@@BLOCKCHAIN__SALE__NOTICE"
+    >
+    The MINDS token is now live. Learn more here.
+    </span>
+  </m-announcement>   
+  <m-blockchain--wallet-address-notice></m-blockchain--wallet-address-notice>
+  <router-outlet></router-outlet>
+</m-body>
+
+<m-messenger *ngIf="minds.LoggedIn"></m-messenger>
+
+<m-hovercard-popup></m-hovercard-popup>
+
+<m-overlay-modal></m-overlay-modal>
+<m--blockchain--transaction-overlay></m--blockchain--transaction-overlay>
+<m-modal--tos-updated *ngIf="session.isLoggedIn()"></m-modal--tos-updated>
+
+<m-cookies-notice *ngIf="!session.isLoggedIn()">
+</m-cookies-notice>

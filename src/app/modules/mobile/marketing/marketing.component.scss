@@ -1,0 +1,70 @@
+.m-mobile--marketing {
+
+  .m-marketing--hero {
+    padding:52px 0 !important;
+
+    .m-marketing--hero--inner {
+      padding-top: 52px;
+      padding-bottom: 52px;
+      flex-wrap: wrap;
+    }
+
+    img {
+      min-width: 100%;
+    }
+
+  }
+
+  .m-marketing--section--subsection--first .m-marketing--section--subsection-container {
+    padding-top: 32px !important;
+  }
+
+  .m-marketing--hero--actions img {
+    max-height: 250px;
+  }
+
+  @media screen and (max-width: 662px) {
+    .m-marketing--hero--slogans {
+      text-align: center;
+    }
+    .m-marketing--hero--actions {
+      flex-basis: 100% !important;
+      margin-top: 16px;
+      margin-left: 0;
+      text-align: center;
+    }
+    .m-marketing--section {
+      padding: 16px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .m-marketing--hero--slogans h2 {
+      font-size: 62px !important;
+      line-height: 1.25;
+    }
+  }
+
+  .m-mobile--marketing--list {
+    padding-left: 24px;
+
+    li {
+      font-size: 16px;
+      line-height: 2.5;
+      color: #666;
+    }
+  }
+
+  .m-mobile--marketing--list--hashes {
+    li {
+      font-size: 10px;
+      word-break: break-all;
+    }
+  }
+
+}
+
+.m-mobile__giantDroid {
+  font-size: 152px;
+  color: #FFF;
+}
